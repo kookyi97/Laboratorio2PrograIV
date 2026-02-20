@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestor Profesional de Libros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="main-container">
+    <header>
+        <h1 id="tituloApp"> Biblioteca Personal</h1>
+        <p id="fechaActual"></p>
+    </header>
+
+    <section class="form-section">
+        <input type="text" id="tituloLibro" placeholder="Título del libro">
+        <input type="text" id="autorLibro" placeholder="Autor">
+        <select id="categoriaLibro">
+            <option value="">Seleccionar categoría</option>
+            <option value="Novela">Novela</option>
+            <option value="Tecnología">Tecnología</option>
+            <option value="Historia">Historia</option>
+        </select>
+        <button id="agregarLibro">Agregar Libro</button>
+    </section>
+
+    <section class="filtros">
+        <button id="mostrarTodos">Todos</button>
+        <button id="filtrarNovela">Novela</button>
+        <button id="filtrarTecnologia">Tecnología</button>
+    </section>
+
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>Categoría</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody id="tablaLibros"></tbody>
+        </table>
+    </section>
+
+    <footer>
+        Total de libros: <span id="contadorLibros">0</span>
+        <button id="modoOscuro">Modo Oscuro</button>
+    </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
